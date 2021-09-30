@@ -1,0 +1,12 @@
+### Build files ###
+/target/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.ipr
+/EBM-Java-UI.iml
+
+### Generated CSS files ###
+/src/main/webapp/css/*
+!/src/main/webapp/css/fonts/

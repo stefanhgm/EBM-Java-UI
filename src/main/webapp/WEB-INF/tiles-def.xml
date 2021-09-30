@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="basic" template="/WEB-INF/layout/layout.jsp">
+        <put-attribute name="page-title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+
+        <put-attribute name="content">
+            <definition template="/WEB-INF/layout/content.jsp"/>
+        </put-attribute>
+
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+
+        <put-list-attribute name="css">
+            <add-attribute value="/static/css/ebm-java-ui.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js">
+            <add-attribute value="/static/js/api.js" type="string"/>
+            <add-attribute value="/static/js/plot1D.js" type="string"/>
+            <add-attribute value="/static/js/plot2D.js" type="string"/>
+            <add-attribute value="/static/js/overview.js" type="string"/>
+            <add-attribute value="/static/js/validate.js" type="string"/>
+            <add-attribute value="/static/js/predict.js" type="string"/>
+        </put-list-attribute>
+    </definition>
+</tiles-definitions>

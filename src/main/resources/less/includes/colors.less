@@ -1,0 +1,48 @@
+/*
+ * Defines all colors used for MDM Portal
+ * 
+ * The color scheme can be found in the IMI Styleguide
+ * 
+ * Color Management is done in 2 steps, which makes changing color much easier:
+ *  1) Elements are getting colored by setting a color named according to its use case (e.g. "background").
+ *     Those variables are prefixed with "color-".
+ *  2) The alias names used in 1) are now connected with a real color defined as variable.
+ *
+ * @author: Philipp Behrendt <phil@beph.de>
+ */
+
+/* Abstract color names */
+@color-dark:@dark-green;
+@color-dark-darker: darken(@color-dark,3%);
+
+@color-light:@light-green;
+
+@color-text:@black;
+
+@color-link:@dark-green;
+@color-link-darker:@color-dark-darker;
+@color-link-visited:@purple;
+
+@color-white:@white;
+@color-black:@black;
+
+/* Gray values from https://demos.vuejsadmin.com/arbano/free/#/ */
+@color-gray-background:#f1f2f7;
+@color-gray-card-top-background:#fafafa;
+@color-gray-card-top-text:#343a40;
+
+@gray-base:#000;
+
+@color-gray-darker: lighten(@gray-base, 13.5%); // #222
+@color-gray-dark: lighten(@gray-base, 20%);   // #333
+@color-gray: lighten(@gray-base, 33.5%); // #555
+@color-gray-light: lighten(@gray-base, 46.7%); // #777
+@color-gray-light-darker: darken(@color-gray,3%);
+@color-gray-lighter: lighten(@gray-base, 93.5%); // #eee
+
+/* color values */
+@black:#3E3E3B; //WWU black
+@dark-green:#005D37;
+@purple:#540d6e;
+@light-green:#C0CC0E;
+@white:#FFFFFF;

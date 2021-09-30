@@ -1,0 +1,55 @@
+/**
+ * According to /WEB-INF/layout/ Folder this file contains styles for Header, Footer and general page structure
+ */
+
+@import "includes/colors";
+@import "includes/grid";
+
+.container{
+  max-width: none !important;
+  width:1500px;
+}
+
+body {
+  background-color: @color-gray-background;
+}
+
+#content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  min-height: 200px;
+}
+
+.form-check label {
+  margin-left: 10px;
+}
+
+.card-body.scroll{
+  overflow-y:scroll;
+  max-height: 900px;
+}
+
+.custom-scrollable-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  th, td {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.pane-hScroll {
+  overflow: auto;
+}
+.pane-vScroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 600px;
+}
+
+.col-4 {
+  margin-top:20px;
+}
